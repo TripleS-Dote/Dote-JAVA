@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/textView_Dote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="300px"
+        android:text="Dote"/>
+
+    <TextView
+        android:id="@+id/textView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_Dote"
+        android:layout_marginTop="150dp"
+        android:textSize="100px"
+        android:text="LOGIN"/>
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디 입력"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginTop="30dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 입력"
+        android:layout_below="@id/editText_username"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:text="회원가입"/>
+    <TextView
+        android:id="@+id/textView_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_password"
+        android:layout_toEndOf="@id/textView_first"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:text="ID/비번찾기"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_first"
+        android:layout_marginTop="20dp"
+        android:text=">" />
+
+    <Button
+        android:id="@+id/button_kakao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_first"
+        android:layout_marginTop="80dp"
+        android:text="kakao" />
+</RelativeLayout>

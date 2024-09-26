@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bgDay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_day"
+        android:scaleType="fitXY"
+        />
+    <ImageView
+        android:id="@+id/bgAfternoon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_afternoon"
+        android:scaleType="fitXY"
+        android:alpha="0"/>
+    <ImageView
+        android:id="@+id/bgNight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_night"
+        android:scaleType="fitXY"
+        android:alpha="0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/settingAndMoneyBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainContentBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="55dp"
+                android:layout_height="230dp">
+                <ImageView
+                    android:id="@+id/imgTurnOverLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/default_leftbtn"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgContentBuilding"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="275dp"
+                    android:layout_height="275dp"
+                    android:src="@drawable/searchbuilding"/>
+                <ImageView
+                    android:id="@+id/imgPlayer"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="97.5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/player_idle"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="55dp"
+                android:layout_height="230dp">
+                <ImageView
+                    android:id="@+id/imgTurnOverRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/default_rightbtn"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/listBtnBar"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnDailyMission"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:text = "일일 미션"
+                    android:background="@drawable/btn_selected"/>
+                <Button
+                    android:id="@+id/btnToDoList"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:text="오늘 목표"
+                    android:background="@drawable/btn_unselected"/>
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:text = "프로필"
+                    android:background="@drawable/btn_unselected"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ScrollView
+                        android:id = "@+id/dailyMissionScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ오늘 목표 3개 정하기"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ오늘 목표 5개 정하기"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ오늘 개발노트 작성하기"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ미션 3개 클리어"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍgithub에 1개 커밋하기"/>
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍgithub에 5개 커밋하기"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ오늘 목표 3개 달성하기"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ오늘 목표 5개 달성하기"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/listcontent"
+                                android:color="@color/black"
+                                android:text = "ㆍ☆보너스☆"/>
+
+                        </LinearLayout>
+                    </ScrollView>
+                    <ScrollView
+                        android:id = "@+id/toDolistScroll"
+                        android:paddingVertical="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="invisible">
+                        <LinearLayout
+                            android:id="@+id/toDolistLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <Button
+                                android:id="@+id/btnAddTodoList"
+                                android:background="@drawable/listcontent"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="+"/>
+                            <TextView
+                                android:id="@+id/text_server"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </ScrollView>
+                    <LinearLayout
+                        android:id="@+id/profileLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:src="@drawable/player_idle"
+                                android:layout_gravity="center"
+                                android:background="@drawable/profileimg_background"
+                                android:padding="20dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp">
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text = "이름 : "/>
+                                    <EditText
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:text="손원일"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text = "학력 : "/>
+                                    <EditText
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:text="연암공대 재학중"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text = "전화번호 : "/>
+                                    <EditText
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:text="01076748179"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

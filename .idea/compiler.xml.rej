@@ -1,0 +1,13 @@
+diff a/.idea/compiler.xml b/.idea/compiler.xml	(rejected hunks)
+@@ -1,10 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="CompilerConfiguration">
+-<<<<<<< HEAD
+-    <bytecodeTargetLevel target="11" />
+-=======
+     <bytecodeTargetLevel target="17" />
+->>>>>>> 9ee2f8a (안드로이드과제)
+   </component>
+ </project>
+\ No newline at end of file
